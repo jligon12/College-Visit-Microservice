@@ -40,10 +40,5 @@ def updateVisit():
         if response.status_code == 201:
             return response.json()
 
-
-
-    
-
-
 if __name__ == "__main__":
     app.run(debug=True, port=5010)
