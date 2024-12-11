@@ -50,7 +50,7 @@ def getVisits():
 
 @app.route('/update-visit', methods = ['POST'])
 def updateVisit():
-    visitUpdateData = request.get_json() #{"key": "Name", "value": "Hogwarts", "element": "Contacts", "updateValue": "HarryPotter,HermioneGranger"}
+    visitUpdateData = request.get_json() 
     key = visitUpdateData.get('key')
     value = visitUpdateData.get('value')
     element = visitUpdateData.get('element')
